@@ -1,0 +1,29 @@
+:root {
+    --light: #fff;
+    --dark: #fff;
+    --main: #fff;
+    --accent: #fff;
+}
+
+.flex {
+    display: flex !important;
+}
+.add-padding{
+padding: 10px;
+}
+
+.add-margin{
+    margin: 10px;
+}
+
+.add-spacing{
+    justify-self: flex-end !important;
+}
+
+.sidebar-width{
+    width: 200px;
+}
+
+.main-width{
+    width: 600px;
+}
