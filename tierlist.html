@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Cove</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!--header-->
+    <nav class="navbar is-dark add-padding is-flex" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand add-spacing">
+            <a class="add-spacing" href="#">
+                <img src="https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg" alt="Cat Image Placeholder" width="200" height="200">
+            </a>
+            <h1 class="box add-margin add-spacing">
+                Kitty cove
+            </h1>
+        </div>
+    </nav>
+    <!--Sidebar Buttons-->
+    <aside class="menu sidebar-width add-padding">
+        <p class="menu-label">
+        General
+        </p>
+        <ul class="menu-list">
+        <li><a>Home</a></li>
+        </ul>
+        <p class="menu-label">
+        Games
+        </p>
+        <ul class="menu-list">
+        <li><a>Kit-Kat-Cove</a></li>
+        <li><a>Kitty Sorter</a></li>
+        </ul>
+        <p class="menu-label">
+        Cat Pictures
+        </p>
+        <ul class="menu-list">
+        <li><a>R/catculations</a></li>
+        <li><a>Cat Pictures</a></li>
+        </ul>
+    </aside>
+
+
+  <main>
+    <div class="div1"
+         ondrop="dragDrop(event)"
+         ondragover="allowDrop(event)">
+     <img id="drag1"
+          src="https://i.pinimg.com/736x/b8/c4/ba/b8c4ba84e47e5bb738de0dc84cb1d620.jpg"
+          draggable="true"
+          ondragstart="dragStart(event)"
+          width="220"
+          height="70">
+
+          <img id="drag2"
+          src="https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg"
+          draggable="true"
+          ondragstart="dragStart(event)"
+          width="220"
+          height="70">
+       </div>
+       </div>
+    <br>
+    <div class="div1"
+         ondrop="dragDrop(event)"
+         ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div class="div1"
+         ondrop="dragDrop(event)"
+         ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <div class="div1"
+         ondrop="dragDrop(event)"
+         ondragover="allowDrop(event)">
+    </div>   
+
+
+
+<!--Footer-->
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+              </p>
+            </div>
+          </footer>
+<!--Scripts-->
+        <script src="./assets/js/tierlist.js"></script>
+</body>
+</html>
