@@ -57,10 +57,14 @@
                 <p class="block">A small tierlist game for cats.</p>
                 <p class="block has-text-centered">In order to play, press the button below. 20 cat images will appear, and you can sort them from most favorite to least favorite. When you are done, you can click the button again to reset the game and a new set of 20 cats will appear.</p>
 
-                <button id="image-getter" class="button is-primary">Start Sorting</button>
+                <div>
+                    <button id="image-getter" class="button is-primary">Start Sorting</button>
+                    <button id="image-resetter" class="button is-info">Reset Sorter</button>
+                </div>
+
 
 <!--Spawn Cat Images Here-->
-                <div id="image-spawner" class="div2"
+                <div id="image-spawner" class="div2 mt-3"
                     ondrop="dragDrop(event)"
                     ondragover="allowDrop(event)">
                     

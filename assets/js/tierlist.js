@@ -14,11 +14,13 @@ function dragDrop(ev) {
     ev.target.appendChild(document.getElementById(data));
 }
 
-//TO DO: fetch cat pictures for tierlist:
+//Fetch Cat Images
 
-var apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=20'
+var apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=10'
 
 var catBtn = document.querySelector('#image-getter')
+
+var resetBtn = document.querySelector('#image-resetter')
 
 function getImages(){
     fetch(apiUrl)
@@ -41,4 +43,14 @@ function getImages(){
     })
 }
 
+//Start Sorting Button
+
 catBtn.addEventListener('click', getImages)
+
+//Reset Sorter Button
+
+resetBtn.addEventListener('click', function(){
+
+    document.querySelector(".tier-img").remove();
+
+})
