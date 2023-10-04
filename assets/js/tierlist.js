@@ -50,7 +50,12 @@ catBtn.addEventListener('click', getImages)
 //Reset Sorter Button
 
 resetBtn.addEventListener('click', function(){
-
-    document.querySelector(".tier-img").remove();
+    var tierImages = document.querySelectorAll(".tier-img");
+    tierImages.forEach(tierImages => {
+      tierImages.remove();
+    });
 
 })
+
+//Store Images in Local Storage?
+
