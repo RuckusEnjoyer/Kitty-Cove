@@ -1,13 +1,10 @@
-:root {
-    --light: #fff;
-    --dark: #fff;
-    --main: #fff;
-    --accent: #fff;
-}
+/* Custom Fonts */
 
 h1{
     font-size: 40px;
 }
+
+
 
 .add-padding{
 padding: 10px;
@@ -15,10 +12,6 @@ padding: 10px;
 
 .add-margin{
     margin: 10px;
-}
-
-.add-spacing{
-    justify-self: flex-end !important;
 }
 
 .sidebar-width{
@@ -34,7 +27,7 @@ padding: 10px;
     align-items: center;
 }
 
-.div1 {
+.tier-div {
     width: 1000px;
     height: 150px;
     padding: 10px;
@@ -45,10 +38,21 @@ padding: 10px;
     border-radius: 10px;
 }
 
+.tier-label{
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+
+}
+.tier-label::placeholder {
+    color: black;
+}
+
 .tier-img{
-margin: 3px;
-width: 100px;
-height: 100px;
-border-radius: 10px;
+    margin: 3px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
