@@ -3,6 +3,7 @@ const url ="https://api.thecatapi.com/v1/images/search"
 const section = document.querySelector('.container')
 const button = document.querySelector('.btn')
 
+// Random Cat Button
 button.addEventListener("click", getRandomCats);
 
 randomCatPhoto = (json) => {
@@ -15,7 +16,7 @@ randomCatPhoto = (json) => {
     image.alt = photo;
     section.appendChild(image);
 };
-
+// 
 async function getRandomCats() {
     section.innerHTML =""
     try {
