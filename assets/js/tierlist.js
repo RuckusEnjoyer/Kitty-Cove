@@ -1,3 +1,9 @@
+//Global Variables
+
+var apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=20'
+var catBtn = document.querySelector('#image-getter')
+var resetBtn = document.querySelector('#image-resetter')
+
 //Functions that make the tierlist images drag/droppable
 
 function allowDrop(ev) {
@@ -16,11 +22,7 @@ function dragDrop(ev) {
 
 //Fetch Cat Images
 
-var apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=10'
 
-var catBtn = document.querySelector('#image-getter')
-
-var resetBtn = document.querySelector('#image-resetter')
 
 function getImages(){
     fetch(apiUrl)
@@ -57,5 +59,4 @@ resetBtn.addEventListener('click', function(){
 
 })
 
-//Store Images in Local Storage?
-
+//Store tierlist labels in Local Storage?
