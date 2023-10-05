@@ -12,7 +12,7 @@
 
 <body>
     <!--header-->
-    <nav class="navbar is-dark add-padding is-flex" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark p-4 is-flex" role="navigation" aria-label="main navigation">
         <div class="navbar-brand add-spacing">
             <a class="add-spacing" href="#">
                 <img src="https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg" alt="Cat Image Placeholder" width="200" height="200">
@@ -24,7 +24,7 @@
     </nav>
     <div class="is-flex">
         <!--Sidebar Buttons-->
-        <aside class="menu sidebar-width add-padding">
+        <aside class="menu sidebar-width p-4">
             <p class="menu-label">
             General
             </p>
@@ -50,48 +50,69 @@
 <!--Kitty Sorter Game-->
 
         <div class="m-6 direction">
-            <section class="direction">
+            <section class="direction is-flex">
                 <h2 class="header is-size-1">
                     Kitty Sorter
                 </h2>
                 <p class="block">A small tierlist game for cats.</p>
-                <p class="block has-text-centered">In order to play, press the button below. 20 cat images will appear, and you can sort them from most favorite to least favorite. When you are done, you can click the button again to reset the game and a new set of 20 cats will appear.</p>
+                <p class="block has-text-centered is-flex-wrap-wrap">In order to play, press the button below. 20 cat images will appear, and you can sort them from most favorite to least favorite. When you are done, you can click the button again to reset the game and a new set of 20 cats will appear.</p>
+
+                <!--Buttons for Cat Game-->
 
                 <div>
                     <button id="image-getter" class="button is-primary">Start Sorting</button>
                     <button id="image-resetter" class="button is-info">Reset Sorter</button>
                 </div>
 
+            <!--Spawn Cat Images Here-->
 
-<!--Spawn Cat Images Here-->
-                <div id="image-spawner" class="div2 mt-3"
+                <div id="image-spawner" class="div2 mt-3 has-text-centered"
                     ondrop="dragDrop(event)"
                     ondragover="allowDrop(event)">
-                    
-                    
                 </div>
             </section>
 
+            <!--Tier List Section-->
+
             <main class="section is-flex is-flex-direction-column">
     
-                <div class="div1"
+                <div id="s" class="tier-div has-background-dark"
                     ondrop="dragDrop(event)"
                     ondragover="allowDrop(event)">
+                    <input class="tier-label has-background-danger" placeholder="S Tier">
                 </div>
     
                 <br>
     
-                <div class="div1"
+                <div id="a" class="tier-div has-background-dark"
                     ondrop="dragDrop(event)"
                     ondragover="allowDrop(event)">
+                    <input class="tier-label has-background-warning" placeholder="A Tier">
                 </div>
     
                 <br>
     
-                <div class="div1"
+                <div id="b" class="tier-div has-background-dark"
                     ondrop="dragDrop(event)"
                     ondragover="allowDrop(event)">
-                </div>   
+                    <input class="tier-label has-background-success	" placeholder="B Tier">
+                </div>  
+
+                <br>
+                
+                <div id="c" class="tier-div has-background-dark"
+                    ondrop="dragDrop(event)"
+                    ondragover="allowDrop(event)">
+                    <input class="tier-label has-background-primary	" placeholder="C Tier">
+                </div> 
+
+                <br>
+
+                <div id="d" class="tier-div has-background-dark"
+                    ondrop="dragDrop(event)"
+                    ondragover="allowDrop(event)">
+                    <input class="tier-label has-background-info " placeholder="D Tier">
+                </div> 
             </main>
         </div>
 
