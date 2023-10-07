@@ -1,116 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitty Cove</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!--header-->
-    <nav class="navbar is-dark add-padding is-flex" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand add-spacing">
-            <a class="add-spacing" href="#">
-                <img src="https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg" alt="Cat Image Placeholder" width="200" height="200">
-            </a>
-            <h1 class="box add-margin add-spacing">
-                Kitty cove
-            </h1>
-        </div>
+    <nav
+      class="navbar is-dark add-padding is-flex"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand add-spacing">
+        <a class="add-spacing" href="#">
+          <img
+            src="https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg"
+            alt="Cat Image Placeholder"
+            width="200"
+            height="200"
+          />
+        </a>
+        <h1 class="box add-margin add-spacing">Kitty cove</h1>
+      </div>
     </nav>
     <div class="is-flex">
-        <!--Sidebar Buttons-->
-        <aside class="menu sidebar-width add-padding">
-            <p class="menu-label">
-            General
-            </p>
-            <ul class="menu-list">
-            <li><a href="./index.html">Home</a></li>
-            </ul>
-            <p class="menu-label">
-            Games
-            </p>
-            <ul class="menu-list">
-            <li><a>Kit-Kat-Cove</a></li>
-            <li><a href="./tierlist.html">Kitty Sorter</a></li>
-            </ul>
-            <p class="menu-label">
-            Cat Pictures
-            </p>
-            <ul class="menu-list">
-            <li><a>R/catculations</a></li>
-            <li><a>Cat Pictures</a></li>
-            </ul>
-        </aside>
+      <!--Sidebar Buttons-->
+      <aside class="menu sidebar-width add-padding">
+        <p class="menu-label">General</p>
+        <ul class="menu-list">
+          <li><a href="./index.html">Home</a></li>
+        </ul>
+        <p class="menu-label">Games</p>
+        <ul class="menu-list">
+          <li><a>Kit-Kat-Cove</a></li>
+          <li><a href="./tierlist.html">Kitty Sorter</a></li>
+        </ul>
+        <p class="menu-label">Cat Pictures</p>
+        <ul class="menu-list">
+          <li><a>R/catculations</a></li>
+          <li><a>Cat Pictures</a></li>
+        </ul>
+      </aside>
 
-<!--Kitty Sorter Game-->
+      <!--Kitty Sorter Game-->
 
-        <div class="m-6 direction">
-            <section class="direction">
-                <h2 class="header is-size-1">
-                    Kitty Sorter
-                </h2>
-                <p class="block">A small tierlist game for cats.</p>
-                <p class="block has-text-centered">In order to play, press the button below. 20 cat images will appear, and you can sort them from most favorite to least favorite. When you are done, you can click the button again to reset the game and a new set of 20 cats will appear.</p>
+      <div class="m-6 direction">
+        <section class="direction">
+          <h2 class="header is-size-1">Kitty Sorter</h2>
+          <p class="block">A small tierlist game for cats.</p>
+          <p class="block has-text-centered">
+            In order to play, press the button below. 20 cat images will appear,
+            and you can sort them from most favorite to least favorite. When you
+            are done, you can click the button again to reset the game and a new
+            set of 20 cats will appear.
+          </p>
 
-                <div>
-                    <button id="image-getter" class="button is-primary">Start Sorting</button>
-                    <button id="image-resetter" class="button is-info">Reset Sorter</button>
-                </div>
+          <div>
+            <button id="image-getter" class="button is-primary">
+              Start Sorting
+            </button>
+            <button id="image-resetter" class="button is-info">
+              Reset Sorter
+            </button>
+          </div>
 
+          <!--Spawn Cat Images Here-->
+          <div
+            id="image-spawner"
+            class="div2 mt-3"
+            ondrop="dragDrop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </section>
 
-<!--Spawn Cat Images Here-->
-                <div id="image-spawner" class="div2 mt-3"
-                    ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
-                    
-                    
-                </div>
-            </section>
+        <main class="section is-flex is-flex-direction-column">
+          <div
+            class="div1"
+            ondrop="dragDrop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
 
-            <main class="section is-flex is-flex-direction-column">
-    
-                <div class="div1"
-                    ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
-                </div>
-    
-                <br>
-    
-                <div class="div1"
-                    ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
-                </div>
-    
-                <br>
-    
-                <div class="div1"
-                    ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
-                </div>   
-            </main>
-        </div>
+          <br />
 
-        </div>
-        
-    
+          <div
+            class="div1"
+            ondrop="dragDrop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
 
+          <br />
 
-<!--Footer-->
-        <footer class="footer">
-            <div class="content has-text-centered">
-              <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-              </p>
-            </div>
-          </footer>
-<!--Scripts-->
-        <script src="./assets/js/tierlist.js"></script>
-</body>
+          <div
+            class="div1"
+            ondrop="dragDrop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+        </main>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by
+          <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
+          licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+          website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <!--Scripts-->
+    <script src="./assets/js/tierlist.js"></script>
+  </body>
 </html>
