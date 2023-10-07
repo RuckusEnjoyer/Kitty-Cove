@@ -56,7 +56,7 @@ h1 {
 :root {
   --grid: 200px;
   --border: 4px;
-  --total: 202px;
+  --total: 198px;
 }
 
 #kit-kat-container {
@@ -64,7 +64,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
 }
 
