@@ -86,7 +86,8 @@ function AImove() {
     let index = options[Math.floor(Math.random() * options.length)];
     grid[index] = "AI";
     let image = document.getElementById(`image-${index}`);
-    image.src = "cat_smiley.png";
+    //image.src = "../pictures/cat_smiley.png";
+    image.src = "https://cdn-icons-png.flaticon.com/256/4436/4436481.png";
     image.style.display = "block";
     checkAIWon();
     checkDraw();
@@ -115,7 +116,8 @@ for (let i = 1; i <= 9; i++) {
         if (yourTurn && !gameOver && !grid[i]) {
             grid[i] = "player";
             let image = document.getElementById(`image-${i}`);
-            image.src = "smiley.png";
+            //image.src = "../pictures/smiley.png";
+            image.src = "https://icons.iconarchive.com/icons/icons8/windows-8/256/Mobile-Phone-icon.png";
             image.style.display = "block";
             yourTurn = false;
             checkPlayerWon();
