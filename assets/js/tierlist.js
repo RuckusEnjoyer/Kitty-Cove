@@ -1,3 +1,9 @@
+//Global Variables
+
+var apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=20'
+var catBtn = document.querySelector('#image-getter')
+var resetBtn = document.querySelector('#image-resetter')
+
 //Functions that make the tierlist images drag/droppable
 
 function allowDrop(ev) {
@@ -49,6 +55,10 @@ catBtn.addEventListener("click", getImages);
 
 //Reset Sorter Button
 
-resetBtn.addEventListener("click", function () {
-  document.querySelector(".tier-img").remove();
-});
+resetBtn.addEventListener('click', function(){
+  var tierImages = document.querySelectorAll(".tier-img");
+  tierImages.forEach(tierImages => {
+    tierImages.remove();
+  });
+
+})
