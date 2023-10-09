@@ -1,5 +1,11 @@
 /* Custom Fonts */
 
+:root {
+  --grid: 200px;
+  --border: 4px;
+  --total: 198px;
+}
+
 h1 {
   font-size: 40px;
 }
@@ -63,6 +69,63 @@ h1 {
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+/* Kit-Kat-Kove */
+
+#kit-kat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-item {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, var(--total));
+  grid-template-rows: repeat(3, var(--total));
+  gap: 0;
+}
+
+.grid-item {
+  width: var(--grid);
+  height: var(--grid);
+  border: var(--border) solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#winner-h1 {
+  margin-bottom: 60px;
+  display: none;
+}
+
+#reset-button {
+  margin-top: 80px;
+  display: none;
+}
+
+#grid-1, #grid-2, #grid-3 {
+  border-top: none;
+}
+
+#grid-1, #grid-4, #grid-7 {
+  border-left: none;
+}
+
+#grid-7, #grid-8, #grid-9 {
+  border-bottom: none;
+}
+
+#grid-3, #grid-6, #grid-9 {
+  border-right: none;
 }
 
 /* Javascript(Random Cat Generator) */
