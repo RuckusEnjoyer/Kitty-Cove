@@ -23,6 +23,7 @@ h1{
     background-color: #F5F5F5;
     display: flex;
     flex-wrap: wrap;
+    flex: 4 3 auto;
     border-radius: 10px;
 }
 
@@ -85,7 +86,9 @@ h1{
 }
 
 @media screen and (max-width:768px) {
-    .sidebar-width{
-        width: 100%;
-    }
+#container{
+    flex-direction: column;
+}
+
+
 }
