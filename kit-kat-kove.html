@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kitty Cove</title>
+    <title>Kit Kat Kove</title>
 
     <link
       rel="stylesheet"
@@ -29,13 +29,11 @@
       <div class="navbar-brand m-0">
         <h1 class="box px-6 m-0 is-align-self-center">Kitty Cove</h1>
       </div>
-  </nav>
-  <div id="container" class="is-flex is-justify-content-space-between">
-       <!--Sidebar Buttons-->
-       <aside class="menu sidebar-width p-4">
-        <p class="menu-label">
-        General
-        </p>
+    </nav>
+    <div class="is-flex">
+      <!--Sidebar Buttons-->
+      <aside class="menu sidebar-width p-4">
+        <p class="menu-label">General</p>
         <ul class="menu-list">
           <li><a href="./index.html">Home</a></li>
         </ul>
@@ -51,19 +49,41 @@
         </ul>
       </aside>
 
-      <!--Main Text-->
-      <main
-        class="card is-flex is-flex-direction-column is-align-items-center m-3"
-      >
-        <h1 class="m-6 is-large has-text-centered">Welcome to Kitty Cove!</h1>
-        <hr />
-        <p class="mx-6 is-flex-wrap-wrap has-text-centered">
-          This is a landing page for all things cat. Come and enjoy cat
-          minigames, cat pictures, and cat videos, all compiled in one place!
-        </p>
-      </main>
+      <!--Game-->
+      <div id="kit-kat-container">
+        <h1 id="winner-h1"></h1>
+        <div class="grid-container">
+          <div class="grid-item" id="grid-1">
+            <img id="image-1" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-2">
+            <img id="image-2" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-3">
+            <img id="image-3" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-4">
+            <img id="image-4" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-5">
+            <img id="image-5" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-6">
+            <img id="image-6" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-7">
+            <img id="image-7" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-8">
+            <img id="image-8" class="grid-image" />
+          </div>
+          <div class="grid-item" id="grid-9">
+            <img id="image-9" class="grid-image" />
+          </div>
+        </div>
+        <button id="reset-button">Reset</button>
+      </div>
     </div>
-
     <!--Footer-->
     <footer class="footer">
       <div class="content has-text-centered">
@@ -80,6 +100,6 @@
       </div>
     </footer>
     <!--Scripts-->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/kit-kat-kove.js"></script>
   </body>
 </html>
