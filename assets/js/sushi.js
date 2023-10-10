@@ -13,8 +13,16 @@ let sushiClicked = 0;
 
 for (let i = 1; i <= totalSushi; i++) {
     let sushi = document.getElementById(`sushi-${i}`);
+    //hides sushi if already clicked
+    if (localStorage.getItem(`sushi-${i}`) === true) {
+        if (sushi) {
+            sushi.style.display = 'none';
+        }
+        sushiClicked++;
+    }
     if (sushi) {
         sushi.addEventListener('click', function() {
+            //hides sushi if clicked
             sushi.style.display = 'none';
             localStorage.setItem(`sushi-${i}`, true);
             sushiClicked++;
@@ -25,15 +33,3 @@ for (let i = 1; i <= totalSushi; i++) {
     }
 }
 
-//function loadSushi() {
-    for (let i = 1; i <= totalSushi; i++) {
-        console.log(localStorage.getItem(`sushi-${i}`));
-        if (localStorage.getItem(`sushi-${i}`)) {
-            let sushi = document.getElementById(`sushi-${i}`);
-            if (sushi) {
-                sushi.style.display = 'none';
-            }
-            sushiClicked++;
-        }
-    }
-//}
