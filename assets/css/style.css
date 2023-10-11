@@ -18,22 +18,10 @@ h1 {
 
 
 
-#content-tier{
+#content{
   min-width:75vw;
   max-width: 75vw;
   margin: 3vw 10vw 3vw 0vw;
-}
-
-#content-home{
-  margin: 3vw 10vw 3vw 0vw;
-  min-width: 75vw;
-  max-width: 75vw;
-}
-
-#content-sushi{
-  margin: 3vw 10vw 3vw 0vw;
-  min-width: 75vw;
-  max-width: 75vw;
 }
 
 /* Tierlist CSS */
