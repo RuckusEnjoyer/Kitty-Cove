@@ -1,9 +1,9 @@
 /* Custom Fonts */
 
 :root {
-  --grid: 200px;
+  --grid: 150;
   --border: 4px;
-  --total: 198px;
+  --total: 148px;
 }
 
 h1 {
@@ -15,8 +15,6 @@ h1 {
 #sidebar{
   min-width: 15vw;
 }
-
-
 
 #content{
   min-width:75vw;
@@ -103,7 +101,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 2vw 10vw 2vw 0vw;
   min-width: 75vw;
   max-width: 75vw;
@@ -136,6 +133,7 @@ h1 {
 
 #reset-button {
   margin-top: 80px;
+  margin-bottom: 3vh;
   display: none;
 }
 
@@ -190,7 +188,17 @@ h1 {
   z-index: 20;
 }
 
+/*
+body {
+  cursor: url("../pictures/cat_cursor.png"), auto;
+}
+:hover {
+  cursor: url("../pictures/cat_cursor.png"),auto;
+}
+*/
+
 /* Javascript (Random Cat Generator) */
+
 .cats{
     display: flex;
     justify-content: center;
