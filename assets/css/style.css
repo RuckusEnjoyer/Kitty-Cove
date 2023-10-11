@@ -150,31 +150,33 @@ h1 {
   content: url("../pictures/sushi.png");
   position: absolute;
   width: 50px;
+  z-index: 30;
 }
 
 #sushi-1 {
-  bottom: 300px;
-  right: 300px;
+  top: 96px;
+  right: 340px;
 }
 
 #sushi-2 {
-  bottom: 300px;
-  right: 300px;
+  bottom: 40px;
+  left: 40px;
 }
 
 #sushi-3 {
-  bottom: 300px;
-  right: 300px;
+  top: 140px;
+  left: 124px;
 }
 
 #sushi-4 {
-  bottom: 300px;
-  right: 300px;
+  bottom: 200px;
+  right: 600px;
 }
 
 #sushi-5 {
-  bottom: 300px;
-  right: 300px;
+  top: 200px;
+  left: 100px;
+  z-index: 20;
 }
 
 /* Javascript (Random Cat Generator) */
