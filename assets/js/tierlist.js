@@ -4,6 +4,8 @@ var apiUrl = 'https://api.thecatapi.com/v1/images/search?limit=20'
 var catBtn = document.querySelector('#image-getter')
 var resetBtn = document.querySelector('#image-resetter')
 
+var input = document.querySelector('#input')
+
 //Functions that make the tierlist images drag/droppable
 
 function allowDrop(ev) {
@@ -17,7 +19,9 @@ function dragStart(ev) {
 function dragDrop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  if(ev.target.nodeName !== 'IMG') {
+    ev.target.appendChild(document.getElementById(data));
+  }
 }
 
 //Fetch Cat Images
@@ -60,5 +64,11 @@ resetBtn.addEventListener('click', function(){
   tierImages.forEach(tierImages => {
     tierImages.remove();
   });
+
+})
+
+//Add Local Storage
+
+input.addEventListener('mouseout', function(){
 
 })

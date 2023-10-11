@@ -50,7 +50,7 @@
 
       <!--Kitty Sorter Game-->
 
-        <div class="card is-flex is-flex-direction-column is-align-items-center m-3">
+        <div class="card is-flex is-flex-direction-column is-align-items-center m-3 p-3">
             <section class="direction is-flex is-flex-wrap-wrap">
                 <h2 class="header is-size-1">
                     Kitty Sorter
@@ -79,44 +79,54 @@
 
             <!--Tier List Section-->
 
-            <main class="section is-flex is-flex-direction-column">
+            <main class="section is-flex is-flex-direction-column is-align-items-flex-start">
     
-                <div id="s" class="tier-div has-background-dark"
-                    ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
+                <div id="s" class="tier-div has-background-dark is-flex"
+>
                     <input class="tier-label has-background-danger" placeholder="S Tier">
+                    <div class="draggable-area"         
+                    ondrop="dragDrop(event)"
+                    ondragover="allowDrop(event)"></div>
                 </div>
     
                 <br>
     
-                <div id="a" class="tier-div has-background-dark"
-                    ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
+                <div id="a" class="tier-div has-background-dark is-flex"
+>
                     <input class="tier-label has-background-warning" placeholder="A Tier">
+                    <div class="draggable-area"         
+                    ondrop="dragDrop(event)"
+                    ondragover="allowDrop(event)"></div>
                 </div>
     
                 <br>
     
-                <div id="b" class="tier-div has-background-dark"
+                <div id="b" class="tier-div has-background-dark is-flex"
+>
+                    <input class="tier-label has-background-success" placeholder="B Tier">
+                    <div class="draggable-area"         
                     ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
-                    <input class="tier-label has-background-success	" placeholder="B Tier">
+                    ondragover="allowDrop(event)"></div>
                 </div>  
 
                 <br>
                 
-                <div id="c" class="tier-div has-background-dark"
+                <div id="c" class="tier-div has-background-dark is-flex"
+>
+                    <input class="tier-label has-background-primary" placeholder="C Tier">
+                    <div class="draggable-area"         
                     ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
-                    <input class="tier-label has-background-primary	" placeholder="C Tier">
+                    ondragover="allowDrop(event)"></div>
                 </div> 
 
                 <br>
 
-                <div id="d" class="tier-div has-background-dark"
+                <div id="d" class="tier-div has-background-dark is-flex"
+>
+                    <input class="tier-label has-background-info" placeholder="D Tier">
+                    <div class="draggable-area"         
                     ondrop="dragDrop(event)"
-                    ondragover="allowDrop(event)">
-                    <input class="tier-label has-background-info " placeholder="D Tier">
+                    ondragover="allowDrop(event)"></div>
                 </div> 
             </main>
         </div>
