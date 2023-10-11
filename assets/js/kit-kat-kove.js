@@ -4,8 +4,10 @@ let gameOver = false;
 let button = document.getElementById("reset-button");
 let h1 = document.getElementById("winner-h1");
 
-const userPic = "https://icons.iconarchive.com/icons/icons8/windows-8/256/Mobile-Phone-icon.png"; //const userPic = "../pictures/red_cat.png";
-const aiPic = "https://cdn-icons-png.flaticon.com/256/4436/4436481.png"; //const aiPic = "../pictures/blue_cat.png";
+//const userPic = "https://icons.iconarchive.com/icons/icons8/windows-8/256/Mobile-Phone-icon.png";
+const userPic = "../pictures/red_cat.png";
+//const aiPic = "https://cdn-icons-png.flaticon.com/256/4436/4436481.png";
+const aiPic = "../pictures/blue_cat.png";
 
 //Every possible set of 3 squares in a row
 let wins = [
