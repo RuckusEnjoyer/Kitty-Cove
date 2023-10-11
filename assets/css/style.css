@@ -183,6 +183,15 @@ h1 {
   z-index: 20;
 }
 
+/*
+body {
+  cursor: url("../pictures/cat_cursor.png"), auto;
+}
+:hover {
+  cursor: url("../pictures/cat_cursor.png"),auto;
+}
+*/
+
 /* Javascript (Random Cat Generator) */
 .cats{
     display: flex;
