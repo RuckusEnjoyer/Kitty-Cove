@@ -22,5 +22,9 @@ https://www.freeiconspng.com/img/40363
 Image Source for Kitty Cove Navbar Image:
 https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg
 
+Image sources for Kit Kat Kove
+https://iconduck.com/emojis/36469/cat-face
+https://iconduck.com/emojis/16882/smiling-cat-face-with-open-mouth
+
 ## Link
 https://ruckusenjoyer.github.io/Kitty-Cove/index.html
