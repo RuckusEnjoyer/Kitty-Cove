@@ -6,7 +6,7 @@ for (let i = 1; i <= totalSushi; i++) {
     //hides sushi if already clicked
     if (localStorage.getItem(`sushi-${i}`) === "eaten") {
         if (sushi) {
-            //sushi.style.display = "none";
+            sushi.style.display = "none";
         }
         sushiClicked++;
     }
