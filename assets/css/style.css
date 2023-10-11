@@ -24,12 +24,16 @@ h1 {
   margin-left: -11vw;
 }
 
+#sidebar-sushi{
+  margin-left: -14vw;
+}
+
 #content-home{
   margin: 3vw 15vw 3vw 0vw;
 }
 
 #content-sushi{
-  margin: 3vw 15vw 3vw 0vw;
+  margin: 3vw 20vw 3vw 0vw;
 }
 
 /* Tierlist CSS */
