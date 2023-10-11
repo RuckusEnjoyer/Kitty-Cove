@@ -149,7 +149,7 @@ h1 {
 .sushi {
   content: url("../pictures/sushi.png");
   position: absolute;
-  width: 100px;
+  width: 50px;
 }
 
 #sushi-1 {
