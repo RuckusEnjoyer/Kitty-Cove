@@ -9,9 +9,9 @@ This is a project made by Kurtis (RuckusEnjoyer), Matthew (greenStone83), and Ch
 - Kitty Sorter, a tier list creator for cat pictures
 - Cat Pictures, randomly generated cat pictures for your pleasure
 
-## Screenshot/Usage
+## Screenshot
 
-
+![Preview image of the application. A dark navbar at the top with a cat picture to the left, buttons to the left of the page, and 'Welcome to Kitty Cove!' in the center.](assets/pictures/127.0.0.1_5500_challenges_Kitty-Cove_index.html.png)
 ## Credits
 Code Source for Draggables:
 https://www.geeksforgeeks.org/html-drag-and-drop/#
