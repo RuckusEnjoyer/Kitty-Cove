@@ -2,7 +2,7 @@ let grid = [];
 let yourTurn = true;
 let gameOver = false;
 let button = document.getElementById("reset-button");
-let h1 = document.getElementById("winner");
+let h1 = document.getElementById("winner-h1");
 
 //const userPic = "https://icons.iconarchive.com/icons/icons8/windows-8/256/Mobile-Phone-icon.png";
 const userPic = "../pictures/red_cat.png";

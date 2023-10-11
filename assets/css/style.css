@@ -16,9 +16,19 @@ h1 {
   margin-left: -7vw;
 }
 
+#sidebar-ttt{
+  margin-left: -15vw;
+}
 
+#sidebar-cats{
+  margin-left: -11vw;
+}
 
 #content-home{
+  margin: 3vw 15vw 3vw 0vw;
+}
+
+#content-sushi{
   margin: 3vw 15vw 3vw 0vw;
 }
 
@@ -95,7 +105,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  margin: 2vw 11vw 2vw 0vw;
 }
 
 .grid-item {
@@ -189,7 +199,7 @@ h1 {
 }
 
 .random_cats{
-    max-width: 100%;
+    max-width: 30vw;
 }
 
 /* Media Inquiries */
