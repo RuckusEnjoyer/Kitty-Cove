@@ -89,6 +89,13 @@ h1 {
     cursor: pointer;
 }
 
+#cat-facts {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
+  border: 1px solid black;
+}
+
 /* Kit-Kat-Kove */
 
 #kit-kat-container {
