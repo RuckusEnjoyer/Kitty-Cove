@@ -4,8 +4,8 @@ let gameOver = false;
 let button = document.getElementById("reset-button");
 let h1 = document.getElementById("winner-h1");
 
-const userPic = "./assets/pictures/red_cat.png";
-const aiPic = "./assets/pictures/blue_cat.png";
+const userPic = "./assets/pictures/open_smile_cat.png";
+const aiPic = "./assets/pictures/gray_cat.png";
 
 //Every possible set of 3 squares in a row
 let wins = [

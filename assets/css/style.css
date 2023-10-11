@@ -1,9 +1,9 @@
 /* Custom Fonts */
 
 :root {
-  --grid: 200px;
+  --grid: 150;
   --border: 4px;
-  --total: 198px;
+  --total: 148px;
 }
 
 h1 {
@@ -15,8 +15,6 @@ h1 {
 #sidebar{
   min-width: 15vw;
 }
-
-
 
 #content{
   min-width:75vw;
@@ -193,6 +191,7 @@ body {
 */
 
 /* Javascript (Random Cat Generator) */
+
 .cats{
     display: flex;
     justify-content: center;
