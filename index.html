@@ -15,21 +15,25 @@
 
   <body>
     <!--header-->
-    <nav class="navbar is-dark add-padding is-flex" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand add-spacing">
-            <a class="add-spacing" href="#">
-                <img src="https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg" alt="Cat Image Placeholder" width="200" height="200">
-            </a>
-            <h1 class="box add-margin add-spacing">
-                Kitty Cove
-            </h1>
-        </div>
+    <nav
+      class="navbar is-dark p-4 is-flex is-justify-content-space-between"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <img
+        src="https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w700.jpg"
+        alt="Cat Image Placeholder"
+        width="200"
+        height="200"
+      />
+      <div class="navbar-brand m-0">
+        <h1 class="box px-6 m-0 is-align-self-center">Kitty Cove</h1>
+      </div>
     </nav>
-    <!--Sidebar Buttons-->
-    <aside class="menu sidebar-width add-padding">
-        <p class="menu-label">
-        General
-        </p>
+    <div class="is-flex">
+      <!--Sidebar Buttons-->
+      <aside class="menu sidebar-width p-4">
+        <p class="menu-label">General</p>
         <ul class="menu-list">
           <li><a href="./index.html">Home</a></li>
         </ul>
@@ -45,13 +49,19 @@
         </ul>
       </aside>
 
-  <!--Main Text-->
-  <main class="">
-
-  </main>
-
-
-
+      <!--Main Text-->
+      <main
+        class="card is-flex is-flex-direction-column is-align-items-center m-3 p-3"
+      >
+        <h1 class="m-6 is-large has-text-centered">Welcome to Kitty Cove!</h1>
+        <p class="mx-6 is-flex-wrap-wrap has-text-centered">
+          This is a landing page for all things cat. Come and enjoy cat
+          mini games, cat pictures, and cat videos, all compiled in one place!
+        </p>
+        <br>
+        <div id="cat-facts"></div>
+      </main>
+    </div>
 
     <!--Footer-->
     <footer class="footer">
@@ -69,6 +79,6 @@
       </div>
     </footer>
     <!--Scripts-->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/homepage.js"></script>
   </body>
 </html>
