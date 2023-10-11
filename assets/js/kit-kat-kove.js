@@ -4,9 +4,7 @@ let gameOver = false;
 let button = document.getElementById("reset-button");
 let h1 = document.getElementById("winner-h1");
 
-//const userPic = "https://icons.iconarchive.com/icons/icons8/windows-8/256/Mobile-Phone-icon.png";
 const userPic = "./assets/pictures/red_cat.png";
-//const aiPic = "https://cdn-icons-png.flaticon.com/256/4436/4436481.png";
 const aiPic = "./assets/pictures/blue_cat.png";
 
 //Every possible set of 3 squares in a row
@@ -91,6 +89,7 @@ function AImove() {
     let index = options[Math.floor(Math.random() * options.length)];
     grid[index] = "AI";
     let image = document.getElementById(`image-${index}`);
+    //image.style.content = url(aiPic);
     image.src = aiPic;
     image.style.display = "block";
     checkAIWon();
@@ -120,6 +119,7 @@ for (let i = 1; i <= 9; i++) {
         if (yourTurn && !gameOver && !grid[i]) {
             grid[i] = "player";
             let image = document.getElementById(`image-${i}`);
+            //image.style.content = url(userPic);
             image.src = userPic;
             image.style.display = "block";
             yourTurn = false;
