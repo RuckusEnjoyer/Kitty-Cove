@@ -12,6 +12,14 @@ h1 {
 
 /* Global Custom CSS / Homepage CSS */
 
+#sidebar{
+  margin-left: -8vw;
+}
+
+#cove{
+  margin: 3vw 15vw 3vw 0vw;
+}
+
 /* Tierlist CSS */
 
 .direction {
@@ -20,13 +28,19 @@ h1 {
   align-items: center;
 }
 
+.draggable-area{
+  width:75%;
+}
+
 .tier-div {
-    width: 1000px;
-    height: 150px;
+    width: 50vw;
+    min-height: 150px;
+    max-height: fit-content;
     padding: 10px;
     border: 1px solid black;
     background-color: #F5F5F5;
     display: flex;
+    align-self: flex-start;
     flex-wrap: wrap;
     flex: 4 3 auto;
     border-radius: 10px;
@@ -128,7 +142,40 @@ h1 {
   border-right: none;
 }
 
-/* Javascript(Random Cat Generator) */
+/* Sushi Game */
+
+.sushi {
+  content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/2048px-Square_-_black_simple.svg.png");
+  position: absolute;
+  width: 100px;
+}
+
+#sushi-1 {
+  bottom: 300px;
+  right: 300px;
+}
+
+#sushi-2 {
+  bottom: 300px;
+  right: 300px;
+}
+
+#sushi-3 {
+  bottom: 300px;
+  right: 300px;
+}
+
+#sushi-4 {
+  bottom: 300px;
+  right: 300px;
+}
+
+#sushi-5 {
+  bottom: 300px;
+  right: 300px;
+}
+
+/* Javascript (Random Cat Generator) */
 .cats{
     display: flex;
     justify-content: center;
