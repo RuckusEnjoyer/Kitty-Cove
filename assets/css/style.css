@@ -12,11 +12,13 @@ h1 {
 
 /* Global Custom CSS / Homepage CSS */
 
-#sidebar{
-  margin-left: -8vw;
+#sidebar-home{
+  margin-left: -7vw;
 }
 
-#cove{
+
+
+#content-home{
   margin: 3vw 15vw 3vw 0vw;
 }
 
@@ -145,7 +147,7 @@ h1 {
 /* Sushi Game */
 
 .sushi {
-  content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Square_-_black_simple.svg/2048px-Square_-_black_simple.svg.png");
+  content: url("../pictures/sushi.png");
   position: absolute;
   width: 100px;
 }
