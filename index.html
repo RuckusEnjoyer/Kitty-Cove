@@ -30,9 +30,9 @@
         <h1 class="box px-6 m-0 is-align-self-center">Kitty Cove</h1>
       </div>
     </nav>
-    <div class="is-flex">
+    <div id="container" class="is-flex is-justify-content-space-around">
       <!--Sidebar Buttons-->
-      <aside class="menu sidebar-width p-4">
+      <aside id='sidebar' class="menu sidebar-width p-4">
         <p class="menu-label">General</p>
         <ul class="menu-list">
           <li><a href="./index.html">Home</a></li>
@@ -50,16 +50,18 @@
       </aside>
 
       <!--Main Text-->
-      <main
-        class="card is-flex is-flex-direction-column is-align-items-center m-3"
-      >
-        <h1 class="m-6 is-large has-text-centered">Welcome to Kitty Cove!</h1>
-        <hr />
-        <p class="mx-6 is-flex-wrap-wrap has-text-centered">
-          This is a landing page for all things cat. Come and enjoy cat
-          minigames, cat pictures, and cat videos, all compiled in one place!
-        </p>
-      </main>
+      <div id="cove" class="card is-flex is-flex-direction-column is-align-items-center">
+        <main
+          class=" is-flex is-flex-direction-column is-align-items-center m-3"
+        >
+          <h1 class="m-6 is-large has-text-centered">Welcome to Kitty Cove!</h1>
+          <hr />
+          <p class="mx-6 is-flex-wrap-wrap has-text-centered">
+            This is a landing page for all things cat. Come and enjoy cat
+            minigames, cat pictures, and cat videos, all compiled in one place!
+          </p>
+        </main>
+      </div>
     </div>
 
     <!--Footer-->
