@@ -12,28 +12,21 @@ h1 {
 
 /* Global Custom CSS / Homepage CSS */
 
-#sidebar-home{
-  margin-left: -7vw;
-}
 
-#sidebar-ttt{
-  margin-left: -15vw;
-}
 
-#sidebar-cats{
-  margin-left: -11vw;
-}
-
-#sidebar-sushi{
-  margin-left: -14vw;
+#content-tier{
+  min-width:75vw;
+  margin: 2vw;
 }
 
 #content-home{
-  margin: 3vw 15vw 3vw 0vw;
+  margin: 3vw 8vw 3vw 0vw;
+  min-width: 75vw;
 }
 
 #content-sushi{
-  margin: 3vw 20vw 3vw 0vw;
+  margin: 3vw 10vw 3vw 0vw;
+  min-width: 75vw;
 }
 
 /* Tierlist CSS */
@@ -110,6 +103,7 @@ h1 {
   align-items: center;
   height: 100vh;
   margin: 2vw 11vw 2vw 0vw;
+  min-width: 75vw;
 }
 
 .grid-item {
