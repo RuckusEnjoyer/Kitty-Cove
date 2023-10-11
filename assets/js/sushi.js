@@ -14,7 +14,9 @@ let sushiClicked = 0;
 for (let i = 1; i <= totalSushi; i++) {
     let sushi = document.getElementById(`sushi-${i}`);
     //hides sushi if already clicked
-    if (localStorage.getItem(`sushi-${i}`) === true) {
+    console.log(localStorage.getItem(`sushi-${i}`));
+    console.log(localStorage.getItem(`sushi-${i}`) === "eaten");
+    if (localStorage.getItem(`sushi-${i}`) === "eaten") {
         if (sushi) {
             sushi.style.display = 'none';
         }
@@ -24,7 +26,7 @@ for (let i = 1; i <= totalSushi; i++) {
         sushi.addEventListener('click', function() {
             //hides sushi if clicked
             sushi.style.display = 'none';
-            localStorage.setItem(`sushi-${i}`, true);
+            localStorage.setItem(`sushi-${i}`, "eaten");
             sushiClicked++;
             if (sushiClicked === totalSushi) {
                 //we're done
