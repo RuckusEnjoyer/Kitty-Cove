@@ -89,7 +89,6 @@ function AImove() {
     let index = options[Math.floor(Math.random() * options.length)];
     grid[index] = "AI";
     let image = document.getElementById(`image-${index}`);
-    //image.style.content = url(aiPic);
     image.src = aiPic;
     image.style.display = "block";
     checkAIWon();
@@ -119,7 +118,6 @@ for (let i = 1; i <= 9; i++) {
         if (yourTurn && !gameOver && !grid[i]) {
             grid[i] = "player";
             let image = document.getElementById(`image-${i}`);
-            //image.style.content = url(userPic);
             image.src = userPic;
             image.style.display = "block";
             yourTurn = false;
